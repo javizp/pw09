@@ -24,6 +24,8 @@ img[src*="mg/"]{
 /*El caracter ~ indica que estos
 selectores estan separados por espacios*/
 /* .resaltado <-- es lo mismo */
+/* .archivo <-- es lo mismo */
+/* .ingles <-- es lo mismo */
 article[class~="resaltado"]{
 	border: 1px dashed blue;
 }
