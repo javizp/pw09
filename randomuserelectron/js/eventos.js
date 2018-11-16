@@ -43,5 +43,12 @@ var muestraUsuario = function(){
 		document.getElementById("foto").setAttribute('src',datos.results[0].picture.large)
 	})
 }
+//Constantes para llamar al PDF
+const ipc=require('electron').ipcRenderer
+const btnPDF=document.getElementById('btnPDF')
+btnPDF.addEventListener('click', function(event){
+	ipc.send('print-to-pdf')
+})
+
 var btnUsuario=document.getElementById('btnUsuario');
 btnUsuario.addEventListener("click",muestraUsuarios);
